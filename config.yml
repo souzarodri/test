@@ -11,13 +11,13 @@ menu:
     main:
         - name: reportagens
           url: reportagens/
-          weight: 5 
-        - name: Papers
-          url: papers/
-          weight: 2
+          weight: 2 
+        - name: assessoria de imprensa
+          url: assessoria/
+          weight: 3
         - name: Courses
           url: courses/
-          weight: 3
+          weight: 5
         - name: Data
           url: data/
           weight: 4 
@@ -25,7 +25,7 @@ menu:
           url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
           weight: 6
 params:
-    description: "jornalismo *reportagem *assessoria _conteúdo"
+    description: "jornalismo *reportagem *assessoria *conteúdo"
     author: rodrigo de souza
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
@@ -58,8 +58,8 @@ params:
           buttons:
             - name: reportagens
               url: reportagens/
-            - name: Data
-              url: data/
+            - name: assessoria de imprensa
+              url: assessoria/
             - name: Courses
               url: courses/
             - name: Tags
