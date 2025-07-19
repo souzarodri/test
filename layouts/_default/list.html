@@ -5,7 +5,7 @@
 {{/* Seção de Destaques - só aparece na home */}}
 {{- if .IsHome }}
 <div class="highlights-section">
-    <h2 class="highlights-title">destaques</h2>
+    <h2 class="highlights-title">Destaques</h2>
     {{- $allPages := where site.RegularPages "Type" "in" site.Params.mainSections }}
     {{- $allPages = where $allPages "Params.hiddenInHomeList" "!=" "true" }}
     {{- $allPages = $allPages | shuffle }}
@@ -33,6 +33,20 @@
             <footer class="entry-footer">
                 {{- partial "post_meta.html" . -}}
             </footer>
+            {{- end }}
+            {{- if .Params.tags }}
+            <div class="entry-footer-tags">
+                {{- range .Params.tags }}
+                <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" class="tag-link">#{{ . }}</a>
+                {{- end }}
+            </div>
+            {{- end }}
+            {{- if .Params.tags }}
+            <div class="entry-footer-tags">
+                {{- range .Params.tags }}
+                <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" class="tag-link">#{{ . }}</a>
+                {{- end }}
+            </div>
             {{- end }}
         </article>
         {{- end }}
@@ -74,7 +88,7 @@
 {{/* Seção de Destaques - só aparece na home após home_info */}}
 {{- if and .IsHome (eq $paginator.PageNumber 1) }}
 <div class="highlights-section">
-    <h2 class="highlights-title">destaques</h2>
+    <h2 class="highlights-title">Destaques</h2>
     {{- $allPages := where site.RegularPages "Type" "in" site.Params.mainSections }}
     {{- $allPages = where $allPages "Params.hiddenInHomeList" "!=" "true" }}
     {{- $allPages = $allPages | shuffle }}
