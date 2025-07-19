@@ -49,3 +49,32 @@
 .dark.list {
     background: var(--theme);
 }
+/* Sobrescrevendo o hover cinza existente com pêssego alaranjado */
+
+/* Botões do profile (Papers, Courses, etc.) */
+.profile .buttons .button:hover,
+.profile .buttons a:hover {
+    background-color: #ffb347 !important;
+    border-color: #ffb347 !important;
+    color: #fff !important;
+}
+
+/* Ícones sociais */
+.social-icons a:hover,
+.social-icons a:hover svg {
+    background-color: #ffb347 !important;
+    color: #fff !important;
+}
+
+/* Links do menu */
+.nav a:hover,
+.menu a:hover {
+    color: #ffb347 !important;
+}
+
+/* Força a cor para todos os elementos com hover */
+*:hover {
+    --secondary: #ffb347;
+    --tertiary: #ffb347;
+    --gray: #ffb347;
+}
