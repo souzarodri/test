@@ -5,7 +5,7 @@
 {{/* Seção de Destaques - só aparece na home */}}
 {{- if .IsHome }}
 <div class="highlights-section">
-    <h2 class="highlights-title">Destaques</h2>
+    <h2 class="highlights-title">destaques</h2>
     {{- $allPages := where site.RegularPages "Type" "in" site.Params.mainSections }}
     {{- $allPages = where $allPages "Params.hiddenInHomeList" "!=" "true" }}
     {{- $allPages = $allPages | shuffle }}
@@ -81,7 +81,7 @@
 {{/* Seção de Destaques - só aparece na home após home_info */}}
 {{- if and .IsHome (eq $paginator.PageNumber 1) }}
 <div class="highlights-section">
-    <h2 class="highlights-title">Destaques</h2>
+    <h2 class="highlights-title">destaques</h2>
     {{- $allPages := where site.RegularPages "Type" "in" site.Params.mainSections }}
     {{- $allPages = where $allPages "Params.hiddenInHomeList" "!=" "true" }}
     {{- $allPages = $allPages | shuffle }}
