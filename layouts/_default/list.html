@@ -104,3 +104,11 @@
 {{- end }}{{/* end profileMode */}}
 
 {{- end }}{{- /* end main */ -}}
+
+<h2>destaques</h2>
+<div class="post-list destaque">
+  {{ $posts := shuffle (where site.RegularPages "Type" "in" site.Params.mainSections) | first 3 }}
+  {{ range $posts }}
+    {{ partial "post-entry.html" . }}
+  {{ end }}
+</div>
