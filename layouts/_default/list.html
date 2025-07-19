@@ -41,13 +41,6 @@
                 {{- end }}
             </div>
             {{- end }}
-            {{- if .Params.tags }}
-            <div class="entry-footer-tags">
-                {{- range .Params.tags }}
-                <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/" class="tag-link">#{{ . }}</a>
-                {{- end }}
-            </div>
-            {{- end }}
         </article>
         {{- end }}
     </div>
