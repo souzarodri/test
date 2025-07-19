@@ -74,3 +74,53 @@ div.highlight:hover .copy-code,
 pre:hover .copy-code {
     display: block;
 }
+
+/* Estilos para seção de Destaques */
+.highlights-section {
+    margin: 2rem 0;
+    padding: 1.5rem 0;
+}
+
+.highlights-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+    text-align: left;
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .highlights-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .highlights-title {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .highlights-section {
+        margin: 1.5rem 0;
+        padding: 1rem 0;
+    }
+}
+
+/* Para garantir que os posts de destaque tenham o mesmo estilo */
+.highlights-grid .post-entry {
+    background: var(--entry);
+    border-radius: var(--radius);
+    transition: transform 0.1s;
+}
+
+.highlights-grid .post-entry:hover {
+    transform: scale(1.02);
+}
