@@ -55,8 +55,7 @@ params:
     profileMode:
           enabled: true
           title: rodrigo de souza
-          subtitle: "jornalista. reportagem, assessoria de imprensa e produção de conteúdo."
-          imageUrl: "perfil.jpeg"
+          subtitle: "jornalista formado pela escola de comunicação da ufrj (eco/ufrj), com publicações em o dia, o globo e uol. atualmente na secretaria municipal de saúde do rio de janeiro. direitos humanos, saúde, cidadania, cultura e administração pública. jornalismo investigativo, jornalismo de dados e muitos outros jornalismos."  
           imageWidth: 160
           imageHeight: 160
           buttons:
