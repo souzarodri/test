@@ -9,8 +9,8 @@ taxonomies:
     tag: tags
 menu:
     main:
-        - name: Books
-          url: books/
+        - name: reportagens
+          url: reportagens/
           weight: 5 
         - name: Papers
           url: papers/
