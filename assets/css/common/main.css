@@ -75,16 +75,16 @@ pre:hover .copy-code {
     display: block;
 }
 
-/* Estilos para seção de Destaques */
 .highlights-section {
-    margin: 2rem 0;
-    padding: 1.5rem 0;
+    margin: 1rem 0 2rem 0; /* Reduzido o espaço superior */
+    padding: 0.5rem 0;
 }
 
 .highlights-title {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
+    margin-left: 1rem; /* Move o título para a direita */
     color: var(--primary);
     text-align: left;
 }
@@ -109,8 +109,12 @@ pre:hover .copy-code {
     }
     
     .highlights-section {
-        margin: 1.5rem 0;
-        padding: 1rem 0;
+        margin: 1rem 0;
+        padding: 0.5rem 0;
+    }
+    
+    .highlights-title {
+        margin-left: 0.5rem; /* Menor margem no mobile */
     }
 }
 
