@@ -9,7 +9,7 @@
     {{- $allPages := where site.RegularPages "Type" "in" site.Params.mainSections }}
     {{- $allPages = where $allPages "Params.hiddenInHomeList" "!=" "true" }}
     {{- $allPages = $allPages | shuffle }}
-    {{- $highlightPages := first 3 $allPages }}
+    {{- $highlightPages := first 6 $allPages }}
     
     <div class="highlights-grid">
         {{- range $highlightPages }}
@@ -85,7 +85,7 @@
     {{- $allPages := where site.RegularPages "Type" "in" site.Params.mainSections }}
     {{- $allPages = where $allPages "Params.hiddenInHomeList" "!=" "true" }}
     {{- $allPages = $allPages | shuffle }}
-    {{- $highlightPages := first 3 $allPages }}
+    {{- $highlightPages := first 6 $allPages }}
     
     <div class="highlights-grid">
         {{- range $highlightPages }}
