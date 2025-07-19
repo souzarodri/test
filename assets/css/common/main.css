@@ -152,7 +152,7 @@ pre:hover .copy-code {
 }
 
 .tag-link:hover {
-    color: var(--primary);
+    color: var(--secondary);
     background: var(--theme);
     transform: translateY(-1px);
 }
