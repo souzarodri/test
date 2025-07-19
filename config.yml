@@ -1,15 +1,12 @@
 baseURL: "https://souzarodri.github.io/test/" 
 title: rodrigo de souza
 theme: PaperMod
-
 enableInlineShortcodes: true
 enableRobotsTXT: true
 pagination:
   pagerSize: 20
-
 taxonomies:
     tag: tags
-
 menu:
     main:
         - name: Books
@@ -27,9 +24,8 @@ menu:
         - name: Blog
           url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
           weight: 6
-
 params:
-    description: "jornalismo _reportagem _assessoria _conteúdo"
+    description: "jornalismo *reportagem *assessoria _conteúdo"
     author: rodrigo de souza
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
@@ -74,12 +70,15 @@ params:
               url: archive/
             - name: Blog
               url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
-
     socialIcons:
         - name: CV
           url: cv.pdf
         - name: Email
-          url: mailto:igelfeld@regensburg.edu
+          url: mailto:seuemail@gmail.com  # Substitua pelo seu email
+        - name: LinkedIn
+          url: https://linkedin.com/in/seuperfil  # Substitua pelo seu perfil
+        - name: Instagram
+          url: https://instagram.com/seuperfil  # Substitua pelo seu perfil
         - name: Zoom
           url: https://www.zoom.us/my/igelfeld
         - name: Location
@@ -98,7 +97,6 @@ params:
           url: https://x.com/pmichaillat
         - name: Bluesky
           url: https://bsky.app/profile/pmichaillat.bsky.social
-
     assets:
         disableScrollBarStyle: true
     cover:
@@ -108,7 +106,6 @@ params:
       text: "rodrigo de souza"
       icon: favicon.ico
       iconHeight: 18
-
 markup:
     goldmark:
         renderer:
