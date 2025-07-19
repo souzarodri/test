@@ -60,8 +60,6 @@ params:
               url: reportagens/
             - name: Data
               url: data/
-            - name: Books
-              url: books/
             - name: Courses
               url: courses/
             - name: Tags
