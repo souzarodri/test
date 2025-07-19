@@ -15,15 +15,12 @@ menu:
         - name: assessoria de imprensa
           url: assessoria/
           weight: 3
-        - name: Courses
-          url: courses/
-          weight: 5
-        - name: Data
-          url: data/
-          weight: 4 
-        - name: Blog
+        - name: produção de conteúdo
+          url: conteudo/
+          weight: 4
+        - name: substack
           url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
-          weight: 6
+          weight: 5
 params:
     description: "jornalismo *reportagem *assessoria *conteúdo"
     author: rodrigo de souza
@@ -60,8 +57,8 @@ params:
               url: reportagens/
             - name: assessoria de imprensa
               url: assessoria/
-            - name: Courses
-              url: courses/
+            - name: produção de conteúdo
+              url: conteudo/
             - name: Tags
               url: tags/
             - name: Archive
